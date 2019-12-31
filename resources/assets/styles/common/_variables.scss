@@ -1,0 +1,21 @@
+/** Colors */
+$brand-primary:         #6de2ef;
+$brand-secondary: #5471de;
+$blue:                #6de2ef;
+$light-blue:          #f3f5f7;
+$dark-blue:           #575b5f;
+$underline:           lighten( $blue, 30% );
+$yellow:              #f9bf3b;
+$dark-text:           #3e3e3e;
+$warning-red:         #f9443b;
+
+/** Box Model  */
+$spacer:                2rem;
+
+/** Fonts  */
+$font-family-text:   'Karla', sans-serif;
+$font-family-header: 'Roboto Slab', serif;
+
+// Slick Carousel ajax-loader.gif path
+$slick-font-path: "~slick-carousel/slick/fonts/";
+$slick-loader-path: "~slick-carousel/slick/";

@@ -1,0 +1,134 @@
+.why-section {
+  background-color: $light-blue;
+}
+
+.why-section__header {
+  line-height: 1.2em;
+
+  @include lg {
+    width: 270px;
+    font-size: 47px;
+    margin: 0 40px 0;
+  }
+}
+
+.why-section__list {
+  padding-left: 25px;
+  list-style: none;
+
+  li {
+    padding-bottom: 28px;
+    padding-left: 1em;
+
+    &::before {
+      color: $blue;
+      content: "\2022";
+      font-size: 3em;
+      display: inline-block;
+      margin-left: -1em;
+      /* same as padding-left set on li */
+      width: 1em;
+      position: relative;
+      bottom: -7px;
+      left: 10px;
+    }
+  }
+}
+
+.container--about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @include lg {
+    max-width: 800px;
+    flex-direction: row;
+  }
+}
+
+.about-me__text {
+  padding-top: 20px;
+
+  @include lg {
+    padding: 5px 0 0 0;
+  }
+}
+
+.about-me__text h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.big {
+  @include lg {
+    font-size: 54px;
+  }
+}
+
+.my-process__header {
+  font-size: 32px;
+  color: $blue;
+}
+
+.my-process__section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+  @include md {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+}
+
+.my-process .container {
+  max-width: 800px;
+}
+
+.my-process__icon {
+  font-size: 125px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.my-process__content {
+  text-align: center;
+
+  @include md {
+    text-align: left;
+    padding: 15px 50px;
+  }
+
+  margin: 0 12%;
+}
+
+.about-images {
+  display: flex;
+  max-height: 510px;
+  overflow: hidden;
+
+  @include md {
+    margin: 0 25px;
+  }
+
+  @include lg {
+    margin: 0 10%;
+  }
+}
+
+.about-images__cell {
+  margin: 0 auto;
+}
+
+.about-images img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-header {
+  @include lg {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,190 @@
+.services-section {
+  text-align: center;
+  font-size: 18px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home .services-section {
+  max-width: 900px;
+  @include xl {
+    max-width: 1100px;
+  }
+}
+
+.home .skills__column {
+  flex: 0 1 45%;
+  @include lg {
+    flex: 0 1 42%;
+  }
+}
+
+.services-section__header {
+   color: $dark-text;
+   text-align: left;
+   position: relative;
+}
+
+.services-section__row {
+  padding: 0 40px 40px;
+  margin: 0 auto;
+  @include md {
+    padding: 0 0 60px;
+  }
+}
+
+.services-section__intro {
+  text-align: center;
+  font-size: 18px;
+  max-width: 780px;
+  margin: 0 auto;
+  @include lg {
+    font-size: 20px;
+  }
+  @include xxl {
+    font-size: 22px;
+  }
+}
+
+.home .services-section .services-section__intro {
+  display: none;
+}
+
+.skills {
+  flex-flow: column;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 25px;
+  justify-content: space-between;
+  @include md {
+    flex-flow: row;
+    padding: 0 20px 20px;
+  }
+}
+
+.skills__column {
+  text-align: left;
+  background: #fff;
+  flex: 0 1 40%;
+  border-radius: 2px;
+  &--small {
+    flex: 0 1 30%;
+  }
+}
+
+.skills__header {
+  font-size: 26px;
+  white-space: nowrap;
+  margin: 25px 0 20px;
+  display: inline-block;
+  margin-left: 8px;
+  @include lg {
+    font-size: 30px;
+  }
+}
+
+.skills__icon {
+  font-size: 40px;
+  margin: 15px 0;
+  color: $blue;
+  display: inline-block;
+  margin-bottom: 15px;
+  line-height: 0;
+}
+
+.skills__btn {
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.skills-btn {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.skills__flex {
+  display: flex;
+  align-items: center;
+}
+
+.skills__read {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-bottom: 2px solid #59e4f0;
+  transition: color 0.2s ease-in-out;
+}
+
+.skills__read:hover {
+  color: $blue;
+}
+
+.services__icon {
+  margin-bottom: 20px;
+  flex: 0 1 0%;
+  @include md {
+    padding: 0;
+  }
+}
+
+.services__icon img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  @include md {
+    width: 351px;
+  height: 351px;
+  }
+}
+
+.services__text {
+  flex: 1 1 0%;
+}
+
+.services__container {
+  padding: 60px 0;
+}
+
+.services__container--dark {
+  background: #e2e9ec;
+}
+
+.services__row--switch .services__icon {
+  @include md {
+    order: 2;
+  }
+}
+
+.services__row--switch .services__text {
+  @include md {
+    order: 1;
+  }
+}
+
+.services__row {
+  display: flex;
+  padding: 0 25px;
+  flex-direction: column;
+  @include md {
+    flex-direction: row;
+  }
+}
+
+.services__text--padding-left {
+  @include md {
+    padding: 0 0 0 45px;
+  }
+  @include xl {
+    padding: 0 0 0 75px;
+  }
+}
+
+.services__text--padding-right {
+  @include md {
+    padding: 0 45px 0 0;
+  }
+  @include xl {
+    padding: 0 75px 0 0; 
+  }
+}

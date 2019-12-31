@@ -1,0 +1,91 @@
+/** Search form */
+// TODO: .search-form {}
+// TODO: .search-form label {}
+// TODO: .search-form .search-field {}
+// TODO: .search-form .search-submit {}
+
+//---- contact form 7 ----//
+
+.wpcf7 {
+    text-align: center;
+    label {
+      display: block;
+    }
+    button, input, select, textarea, submit {
+      padding: 22px;
+      width: 100%;
+      border: none;
+      font-family: $font-family-text;
+      font-size: 17px;
+      background: #f1f1f1;
+      letter-spacing: 0.05em;
+    }
+    .wpcf7-submit {
+      display: block;
+      background-color: $blue, 20%;
+      text-transform: uppercase;
+      padding: 12px 24px;
+      cursor: pointer;
+      font-size: 22px;
+      margin-top: 25px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: 300ms ease-out;
+      font-weight: 700;
+      border: 2px solid $blue;
+      font-weight: 600;
+      color: $blue !important;
+      background: none;
+      width: auto;
+      @include md {
+        padding: 16px 56px;
+      }
+      &:hover {
+        border: 2px solid $blue;
+        background: $blue;
+        color: #fff !important;
+      }
+    }
+  }
+  
+  div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+    border: 2px solid $warning-red;
+    padding: 0.4em 1em;
+  }
+  
+  span.wpcf7-not-valid-tip {
+      color: $warning-red;
+    }
+
+  div.wpcf7-mail-sent-ng {
+    border: 2px solid $warning-red;
+    background: $warning-red;
+    color: #fff;
+    padding: 18px;
+}
+
+div.wpcf7-acceptance-missing, div.wpcf7-validation-errors {
+    border: 2px solid $warning-red;
+    background: $warning-red;
+    color: #fff;
+    padding: 18px;
+}
+
+div.wpcf7-mail-sent-ok {
+  border: 2px solid $brand-secondary;
+    background: $brand-secondary;
+    color: #fff;
+    padding: 18px;
+}
+
+span.wpcf7-not-valid-tip {
+  color: $warning-red;
+}
+
+.wpcf7-text:focus, .wpcf7-textarea:focus {
+  outline: 1px solid rgba(84, 113, 222, 0.6); /* Adjust to suit your tastes */
+}
+
+.wpcf7-submit:focus {
+  outline: none;
+}

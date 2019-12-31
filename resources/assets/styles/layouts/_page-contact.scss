@@ -1,0 +1,60 @@
+.contact-page {
+  text-align: center;
+}
+
+.contact-details__inner {
+  font-size: 18px;
+  padding: 30px 0 0;
+  @include xl {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 30px 0;
+  white-space:nowrap;
+  @include md {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.contact-options__link {
+  &:hover {
+    color: $blue;
+    cursor: pointer;
+  }
+}
+
+.contact-options__icon {
+  margin: 0 0 10px;
+  color: $blue;
+  @include md {
+    margin: 0 10px 0 0;
+  }
+}
+
+// contact-s contact-form
+.contact-s {
+  padding: 0 30px;
+}
+
+.contact-s__inner {
+  max-width: 900px;
+}
+
+.contact-s__text {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.wpcf7 p {
+  margin: 0;
+  @include lg {
+    margin: 0 0 1em;
+  }
+}

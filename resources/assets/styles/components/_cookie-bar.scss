@@ -1,0 +1,50 @@
+.has-cookie-bar #catapult-cookie-bar {
+    font-size: 15px;
+    padding: 20px 30px;
+    @include md {
+        padding: 20px 60px;
+    }
+    @include lg {
+        font-size: 17px;
+    }
+}
+
+.cookie-bar-bar .ctcc-inner {
+    flex-direction: column;
+    max-width: 1000px;
+    @include md {
+        flex-direction: row;
+        margin: 0 auto;
+    }
+}
+
+.cookie-bar-bar button#catapultCookie {
+    background: $blue;
+    margin: 0;
+    width: 100%;
+    margin-top: 15px;
+    color: white;
+    font-weight: 600;
+    padding: 10px 35px;
+    font-family: "Karla", sans-serif;
+    border-radius: 0;
+    @include md {
+        width: auto;
+        margin-top: 0;
+    }
+}
+
+.ctcc-left-side {
+    margin: 0;
+    line-height: 1.5;
+    @include md {
+        margin-right: 1em;
+    }
+}
+
+.ctcc-right-side {
+    width: 100%;
+    @include md {
+        width: auto;
+    }
+}

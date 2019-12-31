@@ -1,0 +1,66 @@
+.review-slider__outer {
+  background: url(../images/macrev2.jpg);
+  background-color: #131f2b;
+  background-size: cover;
+}
+
+.review-slider {
+  color: #fff;
+}
+
+.review-slider ul {
+  bottom: 55px !important;
+  @include md {
+    bottom: 70px !important;
+  }
+}
+
+.review-slide {
+  text-align: center;
+  padding: 60px 30px 110px;
+  @include md {
+    padding: 80px 0 135px;
+  }
+}
+
+.review-slide svg {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: $blue;
+}
+
+.review-slide p {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  font-style: italic;
+  display: block;
+  @include xxl {
+    font-size: 20px;
+  }
+}
+
+.slick-dots li {
+  margin: 0 7px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff !important;
+  
+}
+
+.slick-dots li button:before {
+  transition: 300ms;
+  font-size: 13px !important; 
+  color: #fff !important;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0 !important;
+}
+
+.person {
+  font-size: 18px;
+  font-weight: 700;
+}
+

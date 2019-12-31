@@ -1,0 +1,52 @@
+.intro-block__outer {
+    display: flex;
+    justify-content: center;
+    max-width: 740px;
+    margin: 0 auto;
+    flex-direction: column;
+    @include md {
+      flex-direction: row;
+    }
+  }
+  
+  .intro-block {
+    padding: 0 25px;
+  }
+  
+  .intro-block-small {
+    flex: 1 1 40%;
+  }
+  
+  .intro-block--large {
+    flex: 1 1 60%;
+  }
+  
+  .intro-box {
+    background: #131f2b;
+    color: #fff;
+    padding: 50px;
+  }
+  
+  .intro-box__text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.3em;
+  }
+  
+  .intro-about__header {
+    font-size: 32px;
+    margin: 0 0 25px;
+    @include md {
+      font-size: 37px;
+    }
+    @include xxl {
+      font-size: 42px;
+    }
+  }
+  
+  .intro-about__text {
+    @include md {
+      width: 86%;
+    }
+  }
+  

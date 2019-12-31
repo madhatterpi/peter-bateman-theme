@@ -1,0 +1,65 @@
+.header-container {
+    @include md {
+      position: relative;
+      margin: 0 50px;
+    }
+    @include xxl {
+      margin: 0 150px;
+    }
+  }
+
+  .single-post .nav-home{
+    background: $brand-secondary;
+    height: 70px;
+    @include lg {
+      height: 88px;
+    }
+  }
+
+  .single-post .page-content {
+    padding: 0 0 60px;
+  }
+
+  .entry-title {
+    padding-top: 40px;   
+    @include lg {
+        font-size: 2.4rem;
+      } 
+  }
+
+  .single-post .main {
+    margin-top: 70px;
+    @include lg {
+      margin-top: 88px;
+    }
+  }
+
+  .entry-meta {
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+
+  .entry-meta p,
+  .rt-reading-time {
+    font-size: 15px;
+    margin-bottom: 0.2em;
+  }
+
+  .entry-meta__inner {
+    display: flex;
+    flex-direction: column;
+    @include md {
+      flex-direction: row;
+    }
+  }
+
+  .entry-meta__right {
+    @include md {
+      padding-left: 20px;
+    }
+  }
+
+  // .entry-meta__inner span {
+  //   display: block;
+  // }

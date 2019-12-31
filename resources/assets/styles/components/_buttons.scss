@@ -1,0 +1,47 @@
+.button {
+    border: none;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    background-color: $blue;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 2px;
+    transition: 300ms ease-out;
+    a {
+      text-decoration: none;
+    }
+    &:hover {
+      background-color: transparent;
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+  
+  .button--border {
+    border: 2px solid $blue;
+    font-weight: 600;
+    color: $blue;
+    background: none;
+    &:hover {
+      border: 2px solid $blue;
+      background: $blue;
+      color: #fff;
+    }
+  }
+  
+  .button--white {
+    border: 2px solid #fff;
+    color: #fff;
+    &:hover {
+      border: 2px solid #fff;
+      background: #fff;
+      color: $blue;
+    }
+  }
+  
+  .button--no-margin {
+    margin: 0;
+  }
+  
