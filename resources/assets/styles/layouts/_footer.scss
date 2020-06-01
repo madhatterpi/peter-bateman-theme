@@ -1,5 +1,5 @@
 .footer {
-    background-color: #212123;
+    background-color: $dark-text;
     color: #fff;
     padding: 50px 0 0;
     font-size: 17px;
@@ -11,6 +11,7 @@
   
   .footer-block {
     flex: 0 1 25%;
+    font-size: 16px;
   }
   
   .footer a {
@@ -45,7 +46,6 @@
   .footer__inner > div {
     @include md {
       padding: 0px 8px;
-      align-items: end;
     }
     @include lg {
       padding: 0 20px;
@@ -184,27 +184,8 @@
     padding: 0;
   }
   
-  .arrow-up {
-    width: 100px;
-    height: 65px;
-    position: absolute;
-    left: 50%;
-    top: -8%;
-    transform: translateX(-50%);
-    background: #282a2e;
-    border-radius: 25px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    svg {
-      font-size: 38px;
-    }
-  }
-  
 .bottom-footer {
-  background-color: #212123;
+  background-color: $dark-text;
   color: #fff;
   padding: 0px 25px 15px;
   font-size: 15px;

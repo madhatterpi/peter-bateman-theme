@@ -47,7 +47,7 @@ $count = 0
           <div class="skills__icon show">
             <i class="far fa-desktop"></i>
           </div>
-          <h2 class="header skills__header">Web Design</h2>
+          <h2 class="header skills__header">Web design</h2>
         </div>
 
         <p class="skills__text">I strive to create websites that balance impressive visuals with being informative and intuitive for the user. I use a combination of pen and paper, Illustrator and Photoshop for my design process. Being a freelance web designer means I can offer affordable websites to suit any budget.</p>
@@ -58,7 +58,7 @@ $count = 0
           <div class="skills__icon show">
             <i class="far fa-cogs"></i>
           </div>
-          <h2 class="header skills__header">development</h2>
+          <h2 class="header skills__header">Development</h2>
         </div>
 
         <p class="skills__text">I build fast, mobile-friendly and modern websites. I primarily consider myself a WordPress developer but I'm also confident using Craft and Squarespace. Writing quality and clean code is important to me, as is keeping up to date with the latest coding standards and trends.</p>
@@ -83,7 +83,7 @@ $count = 0
           <div class="skills__icon show">
              <i class="far fa-shopping-cart"></i>
           </div>
-          <h2 class="header skills__header">E-Commerce</h2>
+          <h2 class="header skills__header">E-commerce</h2>
         </div>
 
         <p class="skills__text">For e-commerce web design I use WooCommerce. Its an incredibly capable and feature-rich plugin for WordPress websites. Security always plays a big part in web development but in e-commerce sites, this is particularly important. I follow all security best practices.</p>

@@ -41,7 +41,7 @@
 }
 
 .slick-dots li {
-  margin: 0 7px;
+  margin: 0 12px;
 }
 
 .slick-dots li.slick-active button:before {
@@ -51,7 +51,7 @@
 
 .slick-dots li button:before {
   transition: 300ms;
-  font-size: 13px !important; 
+  font-size: 16px !important; 
   color: #fff !important;
 }
 
@@ -63,4 +63,3 @@
   font-size: 18px;
   font-weight: 700;
 }
-

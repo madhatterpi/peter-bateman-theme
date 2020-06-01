@@ -144,6 +144,7 @@ add_action( 'init', 'create_posttype' );
 // Custom image sizes
 add_image_size( 'portfolio', 9999, 475 ); // 220 pixels wide by 180 pixels tall, soft proportional crop mode
 add_image_size( 'portfolio-crop', 582, 475, true );
+add_image_size( 'portfolio-crop-large', 1122, 950, true );
 add_image_size( 'blog', 364, 9999 );
 add_image_size( 'blog-crop', 454, 340, true );
 
@@ -165,3 +166,16 @@ function load_wpcf7_scripts() {
 
 //Disable admin bar
 show_admin_bar( false );
+
+// ACF Options Page
+if( function_exists('acf_add_options_page') ) {
+	
+    acf_add_options_page(array(
+		'page_title' 	=> 'Theme Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+}

@@ -16,7 +16,7 @@ if ($tags) {
     );
     $my_query = new WP_Query($args); ?>
 
-    <h2 class="blog-section__header header">related articles</h2>
+    <h2 class="blog-section__header header">Related articles</h2>
     <div class="blog-section related-posts">
 
     <?php if ($my_query->have_posts()) {

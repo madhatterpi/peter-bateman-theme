@@ -27,7 +27,7 @@ $portfolio_query = new WP_Query( $args ); ?>
       $post_id = get_the_ID();
       $post = get_page( $post_id );
       $image_id = get_post_thumbnail_id();
-      $img_src = wp_get_attachment_image_url( $image_id, 'portfolio-crop' );
+      $img_src = wp_get_attachment_image_url( $image_id, 'portfolio-crop-large' );
       $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true);
       $url = get_permalink( $post->ID );
     ?>
@@ -36,30 +36,35 @@ $portfolio_query = new WP_Query( $args ); ?>
   if ($count < 7) {
   ?> 
   <!-- If more than 6 stop looping -->
+<div class="col-md project">
+  <div class="col-md__inner">
+    <a class="project__outer" href=" <?php if ( get_field('meta-tags') ) {
+      echo $url;
+    }  ?>">
+    <img src="<?php echo $img_src ?>" alt="<?php echo $image_alt ?>">
+          <div class="project__inner">
+            <div class="project__text">
+              <span class="project__header"><?php the_title(); ?></span>
+              <?php if ( get_field('meta-tags') ) {
+                ?>
+                <span class="project__subheader"><?php echo get_post_meta(get_the_ID(), 'meta-tags', true); ?></span>
+                <?php
+              } else {
+                ?>
+                <span class="project__subheader">case study coming soon</span>
+                <?php
+              }
+    
+               ?>
+    
+            </div>
+          </div>
+    
+      </a>
+  </div>
 
-<a class="col-md col-one project" href=" <?php if ( get_field('meta-tags') ) {
-  echo $url;
-}  ?>">
-<img src="<?php echo $img_src ?>" alt="<?php echo $image_alt ?>">
-      <div class="project__inner">
-        <div class="project__text">
-          <h2 class="project__header"><?php the_title(); ?></h2>
-          <?php if ( get_field('meta-tags') ) {
-            ?>
-            <span class="project__subheader"><?php echo get_post_meta(get_the_ID(), 'meta-tags', true); ?></span>
-            <?php
-          } else {
-            ?>
-            <span class="project__subheader">case study coming soon</span>
-            <?php
-          }
+</div>
 
-           ?>
-
-        </div>
-      </div>
-
-  </a>
   <?php } ?>
   <?php
   endwhile ?>

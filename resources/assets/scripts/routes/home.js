@@ -1,3 +1,5 @@
+import 'slick-carousel';
+
 export default {
   init() {
     // JavaScript to be fired on the home page
@@ -21,7 +23,7 @@ $(window).resize(function() {
   $('.review-slider').slick({
     dots: true,
     infinite: true,
-    speed: 600,
+    speed: 300,
     arrows : false,
   });
 

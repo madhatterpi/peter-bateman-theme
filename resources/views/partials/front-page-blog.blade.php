@@ -1,7 +1,7 @@
 <section class="section frontpage-blog">
-<h2 class="blog-section__header header">latest from the blog</h2>
+<h2 class="blog-section__header header">Latest from the blog</h2>
 <div class="blog-section">
-<div class="blog-section__inner">
+<div class="blog-section__inner blog-section__inner--two">
 
 
 	<?php
@@ -17,7 +17,7 @@
 
 		<!-- the loop -->
 		 <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-		 @include('partials.content-blog') 
+		 @include('partials.content-blog-two') 
 			
 		<?php endwhile; ?> 
 		<!-- end of the loop -->

@@ -14,10 +14,8 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
       // Font Awesome 5
-  wp_enqueue_script('regular', 'https://pro.fontawesome.com/releases/v5.5.0/js/regular.js', ['jquery'], null, true);
-  wp_enqueue_script('brands', 'https://pro.fontawesome.com/releases/v5.5.0/js/brands.js', ['jquery'], null, true);
-  wp_enqueue_script('fajs', 'https://pro.fontawesome.com/releases/v5.5.0/js/fontawesome.js', ['jquery'], null, true);
-  wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto+Slab:400,700|Karla:400,700|Roboto:900', false, null );
+  wp_enqueue_script('font_awesome', 'https://kit.fontawesome.com/0545e025b2.js', array(), NULL, true);
+  wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto+Slab:400,700|Karla:400,700', false, null );
 
   //Scroll-reveal
 //   wp_enqueue_script('scroll', 'https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js', ['jquery'], null, true);

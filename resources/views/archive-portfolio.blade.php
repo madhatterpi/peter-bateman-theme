@@ -2,7 +2,7 @@
 @section('content')
 <section class="banner"
   style="
-  background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/hero/services-banner-paper.jpg);
+  background-image: url(<?php the_field('portoflio_page_banner_backgroud_image', 'option'); ?>);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

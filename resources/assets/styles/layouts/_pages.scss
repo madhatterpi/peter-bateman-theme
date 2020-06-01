@@ -11,18 +11,113 @@
 .tech__logo {
   padding: 15px;
   flex: 0 1 50%;
-
+  display: flex;
+  align-items: center;
   @include md {
     flex: 0 1 auto;
+  }
+  @include lg {
+    padding: 15px 30px;
   }
 }
 
 .tech__logo img {
  width: 100px;
- height: 100px;
  margin: 0 auto;
  @include lg {
-  width: 120px;
-  height: 120px;
+  width: 110px;
  }
+}
+
+.services-temp img {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.tempest {
+  background-color: #1b1a2b !important;
+  color: #f9f9f9;
+}
+
+.tempest .header {
+  color: #f9f9f9;
+}
+
+.tempest .skills__header {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #f9f9f9;
+  @include xl {
+    font-size: 22px;
+   }
+}
+
+.tempest .column p {
+  font-size: 0.9em;
+}
+
+.tempest__subheader {
+  @include md {
+    max-width: 50%;
+    margin: 0 auto 50px;
+  }
+}
+
+.order-1 {
+  order: 1;
+  @include lg {
+    order: initial;
+      }
+}
+
+.order-2 {
+  order: 2;
+  @include lg {
+order: initial;
+  }
+}
+
+.section--extra-top {
+  @include md {
+    padding-top: 90px;
+  }
+
+}
+
+.services-template .column--padded {
+  @include md {
+    padding: 30px;
+  }
+
+}
+
+.services-template .tempest .column {
+  padding: 0 15px;
+
+  @include xlhd {
+    padding: 0 30px;
+  }
+
+}
+
+.services-temp-half-image {
+  background: url("https://www.peterbateman.co.uk/wp-content/uploads/2019/11/warmley-mobile-out-and-about.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  width: 100%;
+}
+
+.services-bottom {
+  margin: 0;
+  padding: 0;
+}
+
+.services-bottom .about-images__cell {
+  padding: 70px;
+  background: #f3f4f5;
+
+  @include xxl {
+    min-height: 600px;
+  }
 }

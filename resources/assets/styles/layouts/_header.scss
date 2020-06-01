@@ -1,292 +1,290 @@
-// TODO: .banner .nav li {}
-// TODO: .banner .nav a {}
 .nav-home {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    // padding: 10px 0;
-    z-index: 2;
-    @include lg {
-      // padding: 32px 0;
-    }
-    ul {
-      padding: 0;
-      list-style-type: none;
-    }
-    li {
-      @include smla {
-        padding: 6px;
-      }
-      @include xl {
-        display: inline-block;
-        padding: 0 40px 0 0;
-      }
-    }
-  }
-  
-  .menu-item {
-    list-style-type: none;
-    padding: 14px;
-    visibility: hidden;
-    @include xl {
-      visibility: visible;
-    }
-  }
-  
-  .site-header__logo {
-    font-size: 26px;
-    position: absolute;
-    top: 20px;
-    left: 15px;
-    font-weight: 600;
-    float: left;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    z-index: 2;
-    a {
-      color: #fff;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-    @include lg {
-      font-size: 28px;
-      top: 26px;
-    }
-  }
-  
-  // overlay
-  .main-menu {
-    transition: 0.5s;
-    z-index: 1;
-    visibility: hidden;
-    opacity: 0;
-    height: 100%;
-    background-color: #5471de;
-    position: fixed;
-    text-align: center;
-    overflow: hidden;
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    @include xl {
-      width: 0;
-      height: 0;
-      opacity: 1;
-      position: static;
-      left: auto;
-      top: auto;
-    }
-  }
-  
-  .hamburger {
-    position: absolute;
-    z-index: 10;
-    top: 20px;
-    right: 15px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  ul {
     padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    @include smla {
+      padding: 6px;
+    }
+
     @include xl {
-      display: none;
+      display: inline-block;
+      padding: 0 40px 0 0;
     }
   }
-  
-  .hamburger-inner,
-  .hamburger-inner:after,
-  .hamburger-inner:before {
-    background: #fff;
-    opacity: 1;
-    width: 30px;
-    height: 3px;
-    border-radius: 1px;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
+}
+
+.menu-item {
+  list-style-type: none;
+  padding: 14px;
+  visibility: hidden;
+
+  @include xl {
+    visibility: visible;
   }
-  
-  .hamburger {
-    top: 23px;
-    @include lg {
-      top: 30px;
+}
+
+// overlay
+.main-menu {
+  transition: 0.5s;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  height: 100%;
+  background-color: #5471de;
+  position: fixed;
+  text-align: center;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  @include xl {
+    width: 0;
+    height: 0;
+    opacity: 1;
+    position: static;
+    left: auto;
+    top: auto;
+  }
+}
+
+.hamburger {
+  position: absolute;
+  z-index: 10;
+  top: 23px;
+  right: 15px;
+  padding: 0;
+
+  @include lg {
+    top: 30px;
+  }
+
+  @include xl {
+    display: none;
+  }
+}
+
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+  background: #fff;
+  opacity: 1;
+  width: 30px;
+  height: 3px;
+  border-radius: 1px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.hamburger-box {
+  width: 30px;
+  height: 23px;
+}
+
+.hamburger.is-active:hover,
+.hamburger:hover {
+  opacity: 1;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger.is-active .hamburger-inner::before {
+  background: #fff;
+}
+
+.main-menu-container {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  @include xl {
+    display: block;
+    right: 0;
+    height: 60px;
+    transform: none;
+    top: 20px;
+    left: auto;
+  }
+}
+
+.mobile-menu-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mobile-menu-visible {
+  visibility: visible;
+}
+
+/* The navigation links inside the overlay */
+.menu-primary-nav-container {
+  visibility: visible;
+  visibility: hidden;
+
+  @include xl {
+    visibility: visible;
+  }
+
+  a {
+    padding: 4px 0;
+    position: relative;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    display: block;
+
+    @include vsm {
+      padding: 8px 0;
+    }
+
+    @include xl {
+      font-size: 19px;
+      padding: 8px 0;
+      position: relative;
+    }
+  }
+}
+
+.site-header__logo {
+  font-size: 26px;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  font-weight: 600;
+  float: left;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  z-index: 2;
+
+  a {
+    color: #fff;
+
+    &:hover {
+      text-decoration: none;
     }
   }
 
-  .hamburger-box {
-    width: 30px;
-    height: 23px;
+  @include lg {
+    font-size: 28px;
+    top: 26px;
   }
-  
-  .hamburger.is-active:hover, .hamburger:hover {
-    opacity: 1;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .menu-primary-nav-container a {
+    font-size: 20px;
   }
-  
-  .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
-    background: #fff;
+}
+
+// menu button
+.menu-icon {
+  width: 20px;
+  height: 19px;
+  position: absolute;
+  z-index: 10;
+  top: 23px;
+  right: 15px;
+  cursor: pointer;
+
+  @include md {
+    top: 13px;
   }
-  
-  .main-menu-container {
-    display: block;
+
+  &::before {
+    content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    @include xl {
-      display: block;
-      right: 0;
-      height: 60px;
-      transform: none;
-      top: 20px;
-      left: auto;
-    }
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    transform-origin: 0 0;
+    transition: transform 0.3s ease-out;
   }
-  
-  .mobile-menu-overlay {
-    visibility: visible;
-    opacity: 1;
+
+  &__middle {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease-out;
+    transform-origin: 0 50%;
   }
-  
-  .header-icon, .header-icon:visited, .header-icon:active {
-    color: #fff;
-    font-size: 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    transform-origin: 0 100%;
+    transition: transform 0.3s ease-out;
   }
-  
-  .header-icon:last-of-type {
-    padding-left: 25px;
-  }
-  
-  .mobile-menu-visible {
-    visibility: visible;
-  }
-  
-  .menu-primary-nav-container {
-    visibility: visible;
-    a {
-      padding: 4px 0;
-      position: relative;
-      letter-spacing: 1px;
-      text-decoration: none;
-      text-transform: capitalize;
-      font-size: 26px;
-      font-weight: 500;
-      color: #fff;
-      display: block;
-      @include vsm {
-        padding: 8px 0;
-      }
-      @include xl {
-        font-size: 19px;
-        padding: 8px 0;
-        position: relative;
-      }
-    }
-  }
-  
-  /* The navigation links inside the overlay */
-  .menu-primary-nav-container {
-    visibility: hidden;
-    @include xl {
-     visibility: visible;
-    }
-  }
-  
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 450px) {
-      .menu-primary-nav-container a {font-size: 20px}
-  }
-  
-  // menu button
-  .menu-icon {
-      width: 20px;
-      height: 19px;
-      position: absolute;
-      z-index: 10;
-      top: 23px;
-      right: 15px;
-      cursor: pointer;
-      @include md {
-        top: 13px;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 3px;
-        background-color: #fff;
-        transform-origin: 0 0;
-        transition: transform .3s ease-out;
-      }
-  
-      &__middle {
-        position: absolute;
-        top: 8px;
-        left: 0;
-        width: 20px;
-        height: 3px;
-        background-color: #fff;
-        transition: all .3s ease-out;
-        transform-origin: 0 50%;
-      }
-  
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 20px;
-        height: 3px;
-        background-color: #fff;
-        transform-origin: 0 100%;
-        transition: transform .3s ease-out;
-      }
-      @include xl {
-        display: none;
-      }
-    }
-  
+
   @include xl {
-    .icons {
-      display: none;
+    display: none;
+  }
+}
+
+@include xl {
+  .icons {
+    display: none;
+  }
+
+  #menu-primary-nav {
+    float: right;
+    margin: 0;
+  }
+
+  .menu-item {
+    a::after {
+      content: "";
+      height: 3px;
+      width: 0;
+      display: block;
+      background-color: transparent;
+      position: absolute;
+      bottom: 0;
     }
-  
-    #menu-primary-nav {
-      float: right;
-      margin: 0;
-    }
-  
-    .menu-item  {
-      a:after {
-        content: "";
-        height: 3px;
-        width: 0;
-        display: block;
-        background-color: transparent;
-        position: absolute;
-        bottom: 0;
-      }
-      a.sayhi:after {
-        background-color: $blue;
-        width: 100%;
-        transition: width .5s ease, background-color .5s ease;
-      }
-    }
-  
-    .current-menu-item {
-      a:after {
-        content: "";
-        height: 3px;
-        width: 100%;
-        display: block;
-        background-color: $blue;
-        position: absolute;
-        bottom: 0;
-      }
+
+    a.sayhi::after {
+      background-color: $blue;
+      width: 100%;
+      transition: width 0.5s ease, background-color 0.5s ease;
     }
   }
-  
-  .fixed-position {
-    position: fixed;
-    width: 100%;
+
+  .current-menu-item {
+    a::after {
+      content: "";
+      height: 3px;
+      width: 100%;
+      display: block;
+      background-color: $blue;
+      position: absolute;
+      bottom: 0;
+    }
   }
-  
+}
+
+.fixed-position {
+  position: fixed;
+  width: 100%;
+}

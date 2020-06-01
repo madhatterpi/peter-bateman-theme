@@ -1,13 +1,8 @@
-.why-section {
-  background-color: $light-blue;
-}
-
 .why-section__header {
   line-height: 1.2em;
 
   @include lg {
     width: 270px;
-    font-size: 47px;
     margin: 0 40px 0;
   }
 }
@@ -54,54 +49,10 @@
   }
 }
 
-.about-me__text h3 {
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-
 .big {
   @include lg {
     font-size: 54px;
   }
-}
-
-.my-process__header {
-  font-size: 32px;
-  color: $blue;
-}
-
-.my-process__section {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 40px;
-
-  @include md {
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 80px;
-  }
-}
-
-.my-process .container {
-  max-width: 800px;
-}
-
-.my-process__icon {
-  font-size: 125px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.my-process__content {
-  text-align: center;
-
-  @include md {
-    text-align: left;
-    padding: 15px 50px;
-  }
-
-  margin: 0 12%;
 }
 
 .about-images {
@@ -125,10 +76,4 @@
 .about-images img {
   max-width: 100%;
   height: auto;
-}
-
-.about-header {
-  @include lg {
-    font-size: 30px;
-  }
 }

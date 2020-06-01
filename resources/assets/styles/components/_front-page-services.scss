@@ -34,6 +34,18 @@
   }
 }
 
+.services-section__row--space-evenly {
+  justify-content: space-evenly !important;
+}
+
+.services-section__row--three-col {
+  flex-flow: column;
+  @include lg {
+    flex-flow: row;
+    max-width: 1440px;
+  }
+}
+
 .services-section__intro {
   text-align: center;
   font-size: 18px;
@@ -73,15 +85,27 @@
   }
 }
 
+.skills__column--max-width {
+  max-width: 320px;
+  margin: 0 15px;
+}
+
 .skills__header {
   font-size: 26px;
   white-space: nowrap;
-  margin: 25px 0 20px;
+  margin: 25px 0 20px 12px;
   display: inline-block;
-  margin-left: 8px;
   @include lg {
-    font-size: 30px;
+    font-size: 28px;
   }
+}
+
+.skills__header--small {
+  font-size: 25px;
+}
+
+.skills__text {
+  font-size: 17px;
 }
 
 .skills__icon {
@@ -91,6 +115,13 @@
   display: inline-block;
   margin-bottom: 15px;
   line-height: 0;
+}
+
+.skills__icon--small {
+  font-size: 22px;
+  @include xl {
+    font-size: 30px;
+  }
 }
 
 .skills__btn {
@@ -142,12 +173,20 @@
   flex: 1 1 0%;
 }
 
+.services__text--max-width {
+  @include md {
+    max-width: 600px;
+  }
+}
+
+
+
 .services__container {
   padding: 60px 0;
 }
 
 .services__container--dark {
-  background: #e2e9ec;
+  background: #f3f4f5;
 }
 
 .services__row--switch .services__icon {
@@ -171,6 +210,10 @@
   }
 }
 
+.services__row-align-center {
+  align-items: center;
+}
+
 .services__text--padding-left {
   @include md {
     padding: 0 0 0 45px;
@@ -187,4 +230,9 @@
   @include xl {
     padding: 0 75px 0 0; 
   }
+}
+
+.wordpress-srevices__intro {
+  max-width: 500px;
+  margin: 0 auto 44px;
 }

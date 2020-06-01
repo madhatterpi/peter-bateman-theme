@@ -9,6 +9,9 @@
 .get-started__content {
   width: 85%;
   margin: 0 auto;
+  @include xl {
+    display: flex;
+  }
   @include xxl {
     width: 65%;
   }
@@ -22,6 +25,9 @@
   margin: 0 0 25px;
   line-height: 1.2em;
   color: #fff;
+  @include xl {
+    font-size: 42px;
+  }
 }
 
 .get-started__highlight {
@@ -41,4 +47,8 @@
     margin: 0;
   }
   
+}
+
+.get-started .button {
+  min-width: 195px;
 }

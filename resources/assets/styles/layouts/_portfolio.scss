@@ -6,24 +6,17 @@
 
 .portfolio-s {
   padding: 0;
-  margin: 60px 120px;
-  max-width: 1270px;
-  margin-left: auto;
-  margin-right: auto;
-  @include xl {
-    padding: 0 2%;
-  }
-  @include xxl {
-    max-width: 1600px;
-  }
-}
-
-.home .portfolio-s {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
   @include lg {
     max-width: 96%;
+  }
+  @include xl {
+    padding: 0 2%;
+  }
+  @include xxl {
+    max-width: 1600px;
   }
 }
 
@@ -35,8 +28,6 @@
 }
 
 .portfolio__header {
-  text-align: left;
-  font-size: 36px;
   margin: 0 0 42px;
 }
 
@@ -51,7 +42,15 @@
 }
 
 .project {
-  margin: 5px;
+  display: block;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.project__outer {
+  display: block;
+  position: relative;
   text-align: center;
   cursor: pointer;
 }
@@ -71,8 +70,9 @@
 .project__inner {
   position: absolute;
   top: 0;
-  width: 100%;
-  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,7 +82,9 @@
   content: "";
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,.2);
@@ -113,14 +115,14 @@
 }
 
 .project__header {
-  font-size: 32px;
+  font-size: 28px;
   margin-top: 0;
   margin-bottom: 20px;
   position: relative;
   transition: 600ms;
   color: #fff;
-  @include xxl {
-    font-size: 40px;
+  @include lg {
+    font-size: 34px;
   }
 }
 
@@ -170,7 +172,6 @@
   opacity: 1;
 }
 
-// --- columns --- //
 .col {
   display: flex;
   background-color: #e2e2e2;
@@ -183,56 +184,21 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .col-one {
-    order: 0;
-  }
-  .col-two {
-    order: 1;
-  }
-  .col-three {
-    order: 3;
-  }
-  .col-four {
-    order: 2;
-  }
-  .col-five {
-    order: 4;
-  }
-  .col-six {
-    order: 5;
-  }
-}
-
 .col-md {
   position: relative;
-  height: 300px;
   @include md {
-    height: 300px;
-    flex: 0 1 calc(50% - 10px);
+    flex: 0 1 50%;
   }
   @include lg {
-    flex: 0 1 calc(33.333% - 24px);
-    margin: 12px;
-  }
-  @include xl {
-    height: 350px;
-  }
-  @include xxl {
-    height: 400px;
+    flex: 0 1 33%;
   }
 }
 
-.home .col-md {
+.col-md__inner {
+  padding: 5px;
+  display: block;
   @include lg {
-    height: 300px;
-    flex: 0 1 calc(33.333% - 24px);
-  }
-  @include xl {
-    height: 350px;
-  }
-  @include xxl {
-    height: 475px;
+    padding: 12px;
   }
 }
 
@@ -305,13 +271,6 @@
 .portfolio__review {
   margin-top: 30px;
   font-weight: 600;
-}
-
-.col-md img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .portfolio-image__container {

@@ -4,7 +4,7 @@ export default {
   init() {
     // JavaScript to be fired on all pages
 
-//Scroll down project__buttons
+//Navbar
 $('.hamburger').on('click', function(e) {
   e.preventDefault();
   $(this).toggleClass('is-active');
@@ -13,24 +13,13 @@ $('.hamburger').on('click', function(e) {
   $('.menu-primary-nav-container').toggleClass('mobile-menu-visible');
 });
 
-$('.project').on('hover', function() {
-  $('.project-overlay').css('opacity', '1');
-});
-
 $('.menu-item').on('hover', function() {
   $(this).find('a').toggleClass('sayhi');
 });
 
-
-$('.project').on('hover', function() {
-  $(this).children().find('.project__text').toggleClass('project__hi');
-});
-
-$(function() {
-  $('a[href*=#]').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 700, 'linear');
-  });
+// Project details show on hover 
+$('.project__inner').on('hover', function() {
+  $(this).find('.project__text').toggleClass('project__hi');
 });
 
 $("div.hamburger").click(function() {
@@ -51,22 +40,6 @@ $("div.hamburger").click(function() {
 
 });
 
-// Portfolio image resize
-$(window).resize(function()  
-{  
-    var ratio = 3.3/4; // height / width  
-    $('.project').height( $('.project').width() * ratio );  
-});  
-  
-// When the page loads, trigger a window resize event  
-// so our element gets resized by default. Saves having   
-// to duplicate the same code on load too.  
-$(window).load(function()  
-{  
-    $(window).trigger('resize');  
-}); 
-
-
 // Scroll Reveal
 $(function()  {
   window.sr = ScrollReveal();
@@ -78,7 +51,7 @@ $(function()  {
   if ( ($(window).width() > 768) && ( $ ('body').hasClass('home') ) ) {
 
     sr.reveal('.skills__icon', {
-      duration: 800,
+      duration: 1200,
       scale: 0.7,
       distance: '0'
     }, 300);
@@ -95,13 +68,10 @@ $(function()  {
     });
 
     sr.reveal('.blog-section__article', {
-      duration: 600,
+      duration: 1200,
       scale: 1,
       distance: '50px'
     }, 250);
-
-    
-
 
   } 
 
@@ -120,7 +90,10 @@ $(function()  {
   }
 });
 
-
+// blog animation
+$('.blog-section__title').on('hover', function() {
+  $(this).find('a').toggleClass('header--lined--say-hi');
+});
     
   },
   finalize() {

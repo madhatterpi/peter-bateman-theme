@@ -11,14 +11,11 @@
  */
 // @import "~some-node-module";
 @import "~hamburgers/_sass/hamburgers/hamburgers";
-@import "~slick-carousel/slick/slick.scss";
-@import "~slick-carousel/slick/slick-theme.scss";
 
 /** Import theme styles */
 @import "common/media-queries";
 @import "common/global";
 @import "components/buttons";
-@import "components/comments";
 @import "components/cookie-bar";
 @import "components/forms";
 @import "components/front-page-intro";
@@ -29,12 +26,10 @@
 @import "components/page-title";
 @import "components/post-navigation";
 @import "components/review";
-@import "components/scroll-down-button";
 @import "components/underline-block-accent";
 @import "components/wp-classes";
 @import "layouts/blog";
 @import "layouts/header";
-@import "layouts/sidebar";
 @import "layouts/footer";
 @import "layouts/pages";
 @import "layouts/page-about";

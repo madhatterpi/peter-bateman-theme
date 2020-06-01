@@ -9,8 +9,7 @@
 $u_modified_time = get_the_modified_time('U');
 if ($u_modified_time >= $u_time + 86400) {
 echo "Last updated on ";
-the_modified_time('F jS, Y');
-echo ", "; }
+the_modified_time('F jS, Y'); }
 else {echo the_time('F jS, Y');} ?> </p>
 
 

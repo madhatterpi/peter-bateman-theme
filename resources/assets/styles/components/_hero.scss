@@ -60,10 +60,11 @@
   
   .hero__subheader {
     font-size: 22px;
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
     margin: 20px 0 10px;
     padding: 0 0 15px;
     color: $blue;
+    font-weight: 700;
 
     @include smla {
       font-size: 16px;

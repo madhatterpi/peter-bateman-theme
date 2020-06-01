@@ -10,11 +10,11 @@
   <div class="section">
     <div class="portfolio-intro">
       <div class="column portfolio-intro__col">
-        <h2 class="header header--lined portfolio__header">the brief</h2>
+        <h2 class="header header--lined portfolio__header">The brief</h2>
         <p><?php the_field('portfolio-brief'); ?></p>
       </div>
       <div class="column portfolio-intro__col">
-        <h2 class="header header--lined portfolio__header">objectives</h2>
+        <h2 class="header header--lined portfolio__header">Objectives</h2>
         <?php if( get_field('objective-one') ): ?>
           <div class="cell">
             <span class="bullet-line"></span><span class="portfolio-into__objectives"><?php the_field('objective-one'); ?></span>
@@ -60,7 +60,7 @@
 <div class="section">
   <div class="row">
     <div class="column content-padding">
-      <h2 class="header header--lined portfolio__header">the approach</h2>
+      <h2 class="header header--lined portfolio__header">The approach</h2>
       <p><?php the_field('portfolio-approach'); ?></p>
     </div>
   </div>
@@ -82,7 +82,7 @@
 <div class="section padding-bottom-none">
   <div class="row">
     <div class="column content-padding">
-      <h2 class="header header--lined portfolio__header">the results</h2>
+      <h2 class="header header--lined portfolio__header">The results</h2>
       <?php the_field('portfolio-results'); ?>
       <?php
         if ( get_field("portfolio-review") ) {
@@ -102,7 +102,7 @@
 <div class="section padding-top-none">
 
     <div class="portfolio-button__outer flex-center">
-        <a class="button button--border" href="<?php echo get_site_url()?>/portfolio">back to portfolio</a>
+        <a class="button button--border" href="<?php echo get_site_url()?>/portfolio">Back to portfolio</a>
       </div>
     </div>
 
