@@ -1,3 +1,12 @@
+.site-logo,
+.site-logo img {
+  width: 74px;
+
+  @include md {
+    width: 82px;
+  }
+}
+
 .nav-home {
   position: absolute;
   top: 0;
@@ -31,7 +40,6 @@
   }
 }
 
-// overlay
 .main-menu {
   transition: 0.5s;
   z-index: 1;
@@ -60,13 +68,9 @@
 .hamburger {
   position: absolute;
   z-index: 10;
-  top: 23px;
-  right: 15px;
+  top: 36px;
+  right: 20px;
   padding: 0;
-
-  @include lg {
-    top: 30px;
-  }
 
   @include xl {
     display: none;
@@ -111,9 +115,8 @@
   @include xl {
     display: block;
     right: 0;
-    height: 60px;
     transform: none;
-    top: 20px;
+    top: 36px;
     left: auto;
   }
 }
@@ -127,7 +130,6 @@
   visibility: visible;
 }
 
-/* The navigation links inside the overlay */
 .menu-primary-nav-container {
   visibility: visible;
   visibility: hidden;
@@ -158,10 +160,9 @@
 }
 
 .site-header__logo {
-  font-size: 26px;
   position: absolute;
   top: 20px;
-  left: 15px;
+  left: 20px;
   font-weight: 600;
   float: left;
   text-transform: capitalize;
@@ -176,20 +177,22 @@
     }
   }
 
+  @include md {
+    top: 20px;
+  }
+
   @include lg {
     font-size: 28px;
     top: 26px;
   }
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
   .menu-primary-nav-container a {
     font-size: 20px;
   }
 }
 
-// menu button
 .menu-icon {
   width: 20px;
   height: 19px;

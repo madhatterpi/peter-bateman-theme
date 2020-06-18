@@ -131,7 +131,7 @@ if( $intro ): ?>
                                   <h2 class="header skills__header skills__header--small">Backlink building</h2>
                               
                         
-                                <p class="skills__text">Gaining back links (other websites that link to your website) is one of the most important tasks for growing traffic and almost always involves creating good quality content.</p>
+                                <p class="skills__text">Gaining backlinks (other websites that link to your website) is one of the most important tasks for growing traffic and almost always involves creating good quality content.</p>
                             </div>
 
         

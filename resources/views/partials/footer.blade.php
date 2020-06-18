@@ -4,7 +4,7 @@
 
     <div class="footer-block footer__legal">
       <div class="logo">
-        <a href="<?php echo get_site_url(); ?>/home">Peter Bateman</a>
+        <div class="site-header__logo__graphic "><a href="{{ home_url('/') }}"><img class="site-logo" src="http://localhost/peterbateman/wp-content/uploads/2020/06/Artboard-4-copy-4-1.png" alt=""></a></div>
       </div>
     </div>
 
@@ -38,6 +38,6 @@
 
 </footer>
 <div class="bottom-footer">
-  <p>&copy; <?php echo date("Y"); ?> Peter Bateman. All rights revserved.</p>
+  <p>&copy; <?php echo date("Y"); ?> Peter Bateman. All rights reserved.</p>
   <a href="<?php echo get_site_url()?>/privacy-policy">privacy policy</a>
 </div>

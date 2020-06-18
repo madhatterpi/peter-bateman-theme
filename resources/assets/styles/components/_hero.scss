@@ -1,124 +1,113 @@
 .hero {
-    height: 100vh;
-    background-image: url(../images/hero/frontpage-hero-done.jpg);
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    @include lg {
-      background-position: center;
-    }
-  }
-  
-  .hero__inner {
-    text-align: left;
-    color: #fff;
-    z-index: 1;
-    padding: 0 25px 30px;
-    @include smla {
-      padding: 0 25px 20px;
-    }
-    @include sm {
-      width: 91%;
-      padding: 0 80px;
-    }
-    @include md {
-      width: 74%;
-      padding: 0 80px;
-    }
-    @include xl {
-      width: 60%;
-    }
-    @include xxl {
-      width: 54%;
-    }
-  }
-  
-  .hero__header {
-    font-size: 38px;
-    padding: 0 0 10px;
-    margin: 0 0 25px;
-    line-height: 1.2;
-    font-weight: bold;
-    text-transform: inherit;
-    color: #fff;
-    max-width: 650px;
-    @include smla {
-      margin-bottom: 0;
-    }
-    @include md {
-      font-size: 52px;
-    }
-    @include lg {
-      font-size: 56px;
-    }
-    @include xxl {
-      font-size: 72px;
-    }
-  }
-  
-  .hero__subheader {
-    font-size: 22px;
-    font-family: sans-serif;
-    margin: 20px 0 10px;
-    padding: 0 0 15px;
-    color: $blue;
-    font-weight: 700;
+  height: 100vh;
+  background-image: url(../images/hero/frontpage-hero-done.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    @include smla {
-      font-size: 16px;
-    }
-    @include md {
-      font-size: 30px;
-    }
-    @include lg {
-      width: 85%;
-    }
-    @include xl {
-      width: 70%;
-      padding: 0 0 20px;
-    }
-    @include xxl {
-      font-size: 36px;
-    }
+  @include lg {
+    background-position: center;
   }
-  
-  .hero__button {
-    border: 2px solid #fff;
-    background: transparent;
-    font-size: 17px;
-    font-weight: 600;
-    display: none;
-    &:hover {
-      text-decoration: none;
-      background-color: #fff;
-      color: $dark-blue;
-    }
-    @include vsm {
-      display: inline-block;
-    }
+}
+
+.hero__inner {
+  color: #fff;
+  z-index: 1;
+  padding: 0 25px 30px;
+
+  @include smla {
+    padding: 0 25px 20px;
   }
-  
-  .hero__image {
-    width: 550px;
-    height: auto;
-    display: none;
-    z-index: -1;
-    @include lg {
-      position: absolute;
-      left: 40%;
-    }
+
+  @include sm {
+    width: 91%;
+    padding: 0 80px;
   }
-  
-  .hero__overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 100vh;
-    background: #021317;
-    opacity: .5;
+
+  @include md {
+    width: 74%;
+    padding: 0 80px;
   }
-  
+
+  @include xl {
+    width: 60%;
+  }
+
+  @include xxl {
+    width: 54%;
+  }
+}
+
+.hero__header {
+  font-size: 38px;
+  padding: 0 0 10px;
+  margin: 0 0 25px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #fff;
+  max-width: 650px;
+
+  @include smla {
+    margin-bottom: 0;
+  }
+
+  @include md {
+    font-size: 52px;
+  }
+
+  @include lg {
+    font-size: 56px;
+  }
+
+  @include xxl {
+    font-size: 72px;
+  }
+}
+
+.hero__subheader {
+  font-size: 22px;
+  font-family: sans-serif;
+  margin: 20px 0 10px;
+  padding: 0 0 15px;
+  color: $blue;
+  font-weight: 700;
+
+  @include smla {
+    font-size: 16px;
+  }
+
+  @include md {
+    font-size: 30px;
+  }
+
+  @include lg {
+    width: 85%;
+  }
+
+  @include xl {
+    width: 70%;
+    padding: 0 0 20px;
+  }
+
+  @include xxl {
+    font-size: 36px;
+  }
+}
+
+.hero__button {
+  @include vsm {
+    display: inline-block;
+  }
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  background: #021317;
+  opacity: 0.5;
+}

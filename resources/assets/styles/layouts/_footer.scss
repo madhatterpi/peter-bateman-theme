@@ -9,10 +9,17 @@
     }
   }
   
+  .footer-block:first-of-type {
+    @include md {
+      flex: 0 1 18%;
+    }
+  } 
+
   .footer-block {
     flex: 0 1 25%;
     font-size: 16px;
-  }
+    max-width: 500px;
+  }    
   
   .footer a {
     color: #fff;

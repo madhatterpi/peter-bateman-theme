@@ -8,5 +8,6 @@
     @include('partials.front-page-services')
     @include('partials.front-page-review')
     @include('partials.front-page-blog') 
+    @include('partials.get-started')
   @endwhile
 @endsection

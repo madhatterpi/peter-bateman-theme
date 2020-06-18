@@ -1,6 +1,4 @@
 .services-section {
-  text-align: center;
-  font-size: 18px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -8,6 +6,8 @@
 
 .home .services-section {
   max-width: 900px;
+  text-align: center;
+
   @include xl {
     max-width: 1100px;
   }
@@ -15,20 +15,22 @@
 
 .home .skills__column {
   flex: 0 1 45%;
+
   @include lg {
     flex: 0 1 42%;
   }
 }
 
 .services-section__header {
-   color: $dark-text;
-   text-align: left;
-   position: relative;
+  color: $dark-text;
+  text-align: left;
+  position: relative;
 }
 
 .services-section__row {
   padding: 0 40px 40px;
   margin: 0 auto;
+
   @include md {
     padding: 0 0 60px;
   }
@@ -40,6 +42,7 @@
 
 .services-section__row--three-col {
   flex-flow: column;
+
   @include lg {
     flex-flow: row;
     max-width: 1440px;
@@ -51,9 +54,11 @@
   font-size: 18px;
   max-width: 780px;
   margin: 0 auto;
+
   @include lg {
     font-size: 20px;
   }
+
   @include xxl {
     font-size: 22px;
   }
@@ -69,6 +74,7 @@
   margin: 0 auto;
   padding: 0 25px;
   justify-content: space-between;
+
   @include md {
     flex-flow: row;
     padding: 0 20px 20px;
@@ -80,14 +86,10 @@
   background: #fff;
   flex: 0 1 40%;
   border-radius: 2px;
+
   &--small {
     flex: 0 1 30%;
   }
-}
-
-.skills__column--max-width {
-  max-width: 320px;
-  margin: 0 15px;
 }
 
 .skills__header {
@@ -95,13 +97,10 @@
   white-space: nowrap;
   margin: 25px 0 20px 12px;
   display: inline-block;
+
   @include lg {
     font-size: 28px;
   }
-}
-
-.skills__header--small {
-  font-size: 25px;
 }
 
 .skills__text {
@@ -117,18 +116,6 @@
   line-height: 0;
 }
 
-.skills__icon--small {
-  font-size: 22px;
-  @include xl {
-    font-size: 30px;
-  }
-}
-
-.skills__btn {
-  display: inline-block;
-  padding-top: 10px;
-}
-
 .skills-btn {
   margin-top: 30px;
   margin-bottom: 15px;
@@ -139,21 +126,10 @@
   align-items: center;
 }
 
-.skills__read {
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 16px;
-  border-bottom: 2px solid #59e4f0;
-  transition: color 0.2s ease-in-out;
-}
-
-.skills__read:hover {
-  color: $blue;
-}
-
 .services__icon {
   margin-bottom: 20px;
   flex: 0 1 0%;
+
   @include md {
     padding: 0;
   }
@@ -163,9 +139,10 @@
   width: 200px;
   height: 200px;
   display: block;
+
   @include md {
     width: 351px;
-  height: 351px;
+    height: 351px;
   }
 }
 
@@ -178,8 +155,6 @@
     max-width: 600px;
   }
 }
-
-
 
 .services__container {
   padding: 60px 0;
@@ -205,6 +180,7 @@
   display: flex;
   padding: 0 25px;
   flex-direction: column;
+
   @include md {
     flex-direction: row;
   }
@@ -218,6 +194,7 @@
   @include md {
     padding: 0 0 0 45px;
   }
+
   @include xl {
     padding: 0 0 0 75px;
   }
@@ -227,12 +204,8 @@
   @include md {
     padding: 0 45px 0 0;
   }
-  @include xl {
-    padding: 0 75px 0 0; 
-  }
-}
 
-.wordpress-srevices__intro {
-  max-width: 500px;
-  margin: 0 auto 44px;
+  @include xl {
+    padding: 0 75px 0 0;
+  }
 }

@@ -1,5 +1,14 @@
 .home .frontpage-blog {
-  padding: 80px 25px;
+  padding: 60px 0;
+
+  @include md {
+    padding: 60px 20px;
+  }
+
+  @include lg {
+    padding: 80px 25px 40px;
+  }
+
 }
 
 .blog-section {
@@ -7,13 +16,16 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 364px; // width of image
+  max-width: 364px;
+
   @include md {
     flex-direction: row;
-    max-width: 900px;;
+    max-width: 900px;
+    ;
   }
+
   @include xl {
-    max-width: 1100px;;
+    max-width: 1100px;
     flex-direction: row;
   }
 }
@@ -30,7 +42,8 @@
 .blog-section__inner {
   display: flex;
   flex-direction: column;
-  margin: 0 auto; 
+  margin: 0 auto;
+
   @include md {
     flex-direction: row;
   }
@@ -51,26 +64,25 @@
   @include md {
     width: 42%;
   }
-  @include lg {
-    // margin: 20px;
-  }
+
   @include xl {
     width: 30%;
-    // flex: 0 1 calc(33.333% - 40px);
   }
 }
 
 .blog-section__article--two {
   flex: 0 1 50%;
   max-width: 360px;
+
   @include lg {
     max-width: 390px;
   }
+
   @include xlhd {
     max-width: 460px;
   }
+
   @include xxl {
-    // flex: 0 1 40%;
     max-width: 535px;
   }
 }
@@ -79,6 +91,7 @@
   @include md {
     margin-right: 15px;
   }
+
   @include xlhd {
     margin-right: 25px;
   }
@@ -86,7 +99,7 @@
 
 .blog-section__details {
   padding: 20px 5px;
-  font-size: 18px;
+
   @include lg {
     padding: 20px 20px 20px 5px;
   }
@@ -97,6 +110,7 @@
   font-size: 22px;
   margin: 10px 0 28px;
   text-transform: inherit;
+
   @include lg {
     font-size: 28px;
   }
@@ -105,6 +119,7 @@
 .blog-section__title a {
   transition: color, 0.3s;
   box-shadow: none;
+
   &:hover {
     text-decoration: none;
     box-shadow: none;
@@ -115,10 +130,12 @@
   max-width: 100%;
   overflow: hidden;
   position: relative;
+
   img {
     width: 100%;
     height: auto;
     transition: transform 0.6s;
+
     &:hover {
       transform: scale(1.07);
     }
@@ -149,7 +166,7 @@
   font-size: 0.9em;
 }
 
-@media  only screen and (min-width:1300px) {
+@media only screen and (min-width:1300px) {
   .blog-section {
     max-width: 1260px;
   }
@@ -159,6 +176,7 @@
   font-size: 32px;
   margin: 0;
   max-width: 750px;
+
   @include lg {
     font-size: 44px;
   }
@@ -170,6 +188,7 @@
 }
 
 .post {
+
   h2,
   h3,
   h4,
@@ -200,7 +219,8 @@ div .syntaxhighlighter {
   font-size: 16px !important;
 }
 
-div .syntaxhighlighter .string, .syntaxhighlighter .string a {
+div .syntaxhighlighter .string,
+.syntaxhighlighter .string a {
   color: #a036d4 !important;
 }
 
@@ -208,7 +228,7 @@ div .syntaxhighlighter .string, .syntaxhighlighter .string a {
   margin: 0 auto;
   max-width: none;
   justify-content: center;
-  max-width: calc( (454px * 2) + (40px * 2) );
+  max-width: calc((454px * 2) + (40px * 2));
 }
 
 .related-posts__article {
@@ -219,6 +239,7 @@ div .syntaxhighlighter .string, .syntaxhighlighter .string a {
 .related-posts__inner {
   max-width: 454px;
   margin: 0 auto;
+
   @include md {
     margin: 0 20px;
   }

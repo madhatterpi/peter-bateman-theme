@@ -13,7 +13,10 @@
   	<div class="banner__subheader">Browse my past projects</div>
   </div>
 </section>
-@include('partials.content-portfolio')
+<section class="section">
+  @include('partials.content-portfolio')
+</section>
+
 @include('partials.get-started')
 
 @endsection
