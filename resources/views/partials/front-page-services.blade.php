@@ -75,7 +75,7 @@ $count = 0
           <h2 class="header skills__header">SEO</h2>
         </div>
 
-        <p class="skills__text">The goal posts are constantly being moved for how a website gets ranked in search results, I stay up to date with these changes and implement a host of tactics to help your website rank where it needs to. SEO services include keyword analysis, website speed optimisation and Google Adwords.</p>
+        <p class="skills__text">The goalposts are constantly being moved for how a website gets ranked in search results, I stay up to date with these changes and implement a host of tactics to help your website rank where it needs to. SEO services include keyword analysis, website speed optimisation and Google Adwords.</p>
       </div>
 
       <div class="skills__column">

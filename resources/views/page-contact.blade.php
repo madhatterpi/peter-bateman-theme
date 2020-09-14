@@ -34,7 +34,7 @@
     <div class="container contact-s">
       <div class="row contact-s__inner">
         <h2 class="header contac-s__header">Get in touch</h2>
-        <p class="contact-s__text">I'd love to hear from you! Whatever you want, whether it be a quote or you want to find out more about my work, just drop me a message and I'll get back to you soon.</p>
+        <p class="contact-s__text">I'd love to hear from you! Whether you're interested in getting a quote or you want to find out more about my work, just drop me a message and I'll get back to you soon.</p>
         <div class="contact-form">
           <?php the_field( 'contact_form_shortcode' ); ?>
         </div>
