@@ -35,9 +35,16 @@
   margin: 0 5px;
   display: flex;
   flex-direction: column;
+  max-width: 1500px;
+
   @include md {
+    margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  @include lg {
+    margin: 0 auto;
   }
 }
 
@@ -53,6 +60,17 @@
   position: relative;
   text-align: center;
   cursor: pointer;
+  overflow: hidden;
+
+}
+
+.project__outer img {
+  transition: transform 0.6s, filter 0.6s;
+}
+
+.project__outer:hover img {
+  transform: scale(1.07);
+  filter: blur(3px);
 }
 
 .project__subheader {
@@ -96,6 +114,7 @@
 
 .project__inner:hover::before {
   background: rgba(18, 26, 39, 0.6);
+  // background: #2140b3cf;
 }
 
 .project__text {
@@ -104,6 +123,7 @@
   width: 75%;
   z-index: 1;
   @include md {
+    visibility: hidden;
     opacity: 0;
   }
 }
@@ -149,6 +169,7 @@
 }
 
 .project__hi {
+  visibility: visible;
   opacity: 1;
 }
 
@@ -195,7 +216,7 @@
 }
 
 .col-md__inner {
-  padding: 5px;
+  padding: 10px;
   display: block;
   @include lg {
     padding: 12px;

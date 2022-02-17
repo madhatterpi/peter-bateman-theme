@@ -8,9 +8,9 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/wp-content/themes/peters-theme",
+  "publicPath": "/peterbateman/wp-content/themes/peters-theme",
   "devUrl": "http://localhost/peterbateman",
-  "proxyUrl": "http://localhost:3000",
+  "proxyUrl": "http://localhost:3000/",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
     "app/**/*.php",

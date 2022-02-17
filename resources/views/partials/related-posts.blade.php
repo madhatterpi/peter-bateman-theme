@@ -1,4 +1,4 @@
-<div class="blog-section__outer">
+<div class="blog-section__outer related-posts-section">
 <div class="column">
 
 

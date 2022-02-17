@@ -4,16 +4,22 @@
 
     <div class="footer-block footer__legal">
       <div class="logo">
-        <div class="site-header__logo__graphic "><a href="{{ home_url('/') }}"><img class="site-logo" src="http://localhost/peterbateman/wp-content/uploads/2020/06/Artboard-4-copy-4-1.png" alt=""></a></div>
+        <div class="site-header__logo__graphic "><a href="{{ home_url('/') }}"><img class="site-logo" src="<?php the_field('logo', 'options') ?>" alt=""></a></div>
       </div>
     </div>
 
     <div class="footer-block footer__contact">
+      <?php
+      $footer_about = get_field('footer_about', 'option'); ?>
       <div class="footer__navigation">
-        <h3 class="footer__header">Service area</h3>
+        <?php
+        if( $footer_about ): ?>
+        <h3 class="footer__header"><?php echo esc_attr( $footer_about['header'] ); ?></h3>
       </div>
-      <p>I'm a freelance web designer operating out of Bristol. I also do a lot of remote work. Have a browse of the services I offer and get in touch about your next project.</p>
+      <p><?php echo esc_attr( $footer_about['text'] ); ?></p>
+      <?php endif; ?>
     </div>
+
 
     <div class="footer-block footer__legal">
       <h3 class="footer__header">Contact me</h3>
@@ -29,9 +35,8 @@
     </div>
 
       <div class="footer-block footer__social-icons">
-        <a href="https://www.facebook.com/peterbateman.webdev" class="footer-icon"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/PeterBateman4" class="footer-icon"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/pwbateman/" class="footer-icon"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/PeterBateman4" class="footer-icon"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/peter.codes/" class="footer-icon"><i class="fab fa-instagram" aria-hidden="true"></i></a>
       </div>
 
   </div>

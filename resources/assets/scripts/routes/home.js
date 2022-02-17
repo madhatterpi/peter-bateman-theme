@@ -3,30 +3,12 @@ import 'slick-carousel';
 export default {
   init() {
     // JavaScript to be fired on the home page
-
-    function fullscreen(){
-      $('.hero').css({
-          height: $(window).outerHeight(true)
-      });
-      $('.hero__overlay').css({
-        height: $(window).outerHeight(true)
-    });
-  }
-
-  fullscreen();
-
-// Run the function in case of window resize
-$(window).resize(function() {
-     fullscreen();         
-  });
-
   $('.review-slider').slick({
     dots: true,
     infinite: true,
     speed: 300,
     arrows : false,
   });
-
 
   },
   finalize() {

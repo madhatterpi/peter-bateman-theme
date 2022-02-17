@@ -7,7 +7,7 @@
     font-size: 18px;
     display: inline-block;
     letter-spacing: 2px;
-    transition: 300ms ease-out;
+    transition: background-color 300ms ease-out, color 300ms ease-out;
     a {
       text-decoration: none;
     }

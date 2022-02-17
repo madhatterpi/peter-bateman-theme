@@ -10,11 +10,10 @@
   <div class="banner__overlay"></div>
   <div class="banner__text">
   	<h1 class="banner__header">Portfolio</h1>
-  	<div class="banner__subheader">Browse my past projects</div>
   </div>
 </section>
 <section class="section">
-  @include('partials.content-portfolio')
+  @include('partials.content-portfolio-archive')
 </section>
 
 @include('partials.get-started')

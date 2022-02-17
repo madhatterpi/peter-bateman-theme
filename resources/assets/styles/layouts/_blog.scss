@@ -1,9 +1,5 @@
 .home .frontpage-blog {
-  padding: 60px 0;
-
-  @include md {
-    padding: 60px 20px;
-  }
+  padding: 60px 20px;
 
   @include lg {
     padding: 80px 25px 40px;
@@ -224,6 +220,13 @@ div .syntaxhighlighter .string,
   color: #a036d4 !important;
 }
 
+.related-posts-section {
+  margin-top: 3em;
+  @include lg {
+    margin-top: 0;
+  }
+}
+
 .related-posts {
   margin: 0 auto;
   max-width: none;
@@ -247,4 +250,34 @@ div .syntaxhighlighter .string,
 
 .dpsp-networks-btns-wrapper li {
   margin-right: 10px;
+}
+
+.blog-post__outer {
+
+  @include lg {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 65% 1fr;
+    justify-items: center;
+  }
+  
+}
+
+.sidebar {
+  padding: 0 25px;
+  @include lg {
+    margin: 20% 0 0 12%;
+    padding: 0;
+  }
+}
+
+.sidebar a {
+  color: $brand-secondary;
+  font-weight: 600;
+}
+
+.sidebar .widget {
+  border-bottom: 1px solid #e5eaec;
+  padding-bottom: 2em;
 }

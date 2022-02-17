@@ -24,10 +24,13 @@ $backgroundPageImg = wp_get_attachment_image_src( get_post_thumbnail_id($page->I
     <?php if ( is_post_type_archive('portfolio') ) { ?>
       <h1 class="banner__header">Portfolio</h1>
       <div class="banner__subheader">Browse my latest work</div>
+    <?php }  elseif ( is_category() ) { ?>
+      <h1 class="banner__header">Blog</h1>
+      <div class="banner__subheader">Articles in: {!! App::title() !!}</div>
     <?php } elseif ( is_home() ) { ?>
       <h1 class="banner__header">Blog</h1>
       <div class="banner__subheader">News, views and Wordpress tips</div>
-    <?php }elseif ( is_404() ) { ?>
+    <?php } elseif ( is_404() ) { ?>
       <h1 class="banner__header">404</h1>
     <?php } elseif ( is_singular( 'portfolio' ) ) { ?>
       <h1 class="banner__header banner__header--small">{!! App::title() !!}</h1>

@@ -142,9 +142,7 @@ function aw_custom_add_image_size_names( $sizes ) {
 add_action( 'init', 'create_posttype' );
 
 // Custom image sizes
-add_image_size( 'portfolio', 9999, 475 ); // 220 pixels wide by 180 pixels tall, soft proportional crop mode
-add_image_size( 'portfolio-crop', 582, 475, true );
-add_image_size( 'portfolio-crop-large', 1122, 950, true );
+add_image_size( 'portfolio-crop-large', 942, 798, true );
 add_image_size( 'blog', 364, 9999 );
 add_image_size( 'blog-crop', 454, 340, true );
 
@@ -164,8 +162,11 @@ function load_wpcf7_scripts() {
     }
 }
 
-//Disable admin bar
+// Disable admin bar
 show_admin_bar( false );
+
+// Disable Yoast SEO messages
+add_filter( 'wpseo_update_notice_content', '__return_null' );
 
 // ACF Options Page
 if( function_exists('acf_add_options_page') ) {
@@ -179,3 +180,32 @@ if( function_exists('acf_add_options_page') ) {
 	));
 	
 }
+
+/**
+ * Remove Block Library
+ */
+function remove_wp_block_library_css(){
+    wp_dequeue_style( 'wp-block-library' );
+
+    }
+    add_action( 'wp_enqueue_scripts', 'remove_wp_block_library_css' );
+
+
+/**
+ * Enqueue Block Library on blog posts
+ */
+function theme_name_scripts() {
+    if( is_single() ) {   // Only add this style onto the Blog page.
+        wp_enqueue_style( 'wp-block-library', get_stylesheet_uri() );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
+
+function mm_ejs_disable_enlighter($enabled){
+    // compare uri
+
+    return ( $_SERVER['REQUEST_URI'] != '/peterbateman/' or '/peterbateman/about' );
+}
+
+// add startup filter
+add_filter('enlighter_startup', 'mm_ejs_disable_enlighter');

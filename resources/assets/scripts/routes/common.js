@@ -71,12 +71,14 @@ export default {
         sr.reveal(($('.project:lt(3)')), {
           duration: 1200,
           scale: 1,
+          distance: '50px'
 
         });
 
         sr.reveal(($('.project').slice(-3)), {
           duration: 1200,
           scale: 1,
+          distance: '50px'
         });
 
         sr.reveal('.blog-section__article', {

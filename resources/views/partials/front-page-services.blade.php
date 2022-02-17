@@ -47,7 +47,7 @@ $count = 0
           <div class="skills__icon show">
             <i class="far fa-desktop"></i>
           </div>
-          <h2 class="header skills__header">Web design</h2>
+          <h2 class="header skills__header">Bristol web design</h2>
         </div>
 
         <p class="skills__text">I strive to create websites that balance impressive visuals with being informative and intuitive for the user. I use a combination of pen and paper, Illustrator and Photoshop for my design process. Being a freelance web designer means I can offer affordable websites to suit any budget.</p>
@@ -83,7 +83,7 @@ $count = 0
           <div class="skills__icon show">
              <i class="far fa-shopping-cart"></i>
           </div>
-          <h2 class="header skills__header">E-commerce</h2>
+          <h2 class="header skills__header">E-commerce webites</h2>
         </div>
 
         <p class="skills__text">For e-commerce web design I use WooCommerce. Its an incredibly capable and feature-rich plugin for WordPress websites. Security always plays a big part in web development but in e-commerce sites, this is particularly important. I follow all security best practices.</p>
@@ -91,7 +91,7 @@ $count = 0
 
   </div>
 
-  <a class="button button--border button--no-margin skills-btn" href="<?php echo site_url('/services') ?>">Find out more</a>
+  <a class="button button--border button--no-margin skills-btn" href="<?php echo site_url('/services/') ?>">Find out more</a>
   
 </section>
 

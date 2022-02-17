@@ -93,7 +93,7 @@
 }
 
 .skills__header {
-  font-size: 26px;
+  font-size: 25px;
   white-space: nowrap;
   margin: 25px 0 20px 12px;
   display: inline-block;
@@ -108,12 +108,16 @@
 }
 
 .skills__icon {
-  font-size: 40px;
+  font-size: 30px;
   margin: 15px 0;
   color: $blue;
   display: inline-block;
   margin-bottom: 15px;
   line-height: 0;
+
+  @include lg {
+    font-size: 40px;
+  }
 }
 
 .skills-btn {

@@ -10,8 +10,13 @@
   ">
   <div class="banner__overlay"></div>
   <div class="banner__text">
-  	<h1 class="banner__header">Blog</h1>
-  	<div class="banner__subheader">News, views and Wordpress tips</div>
+    <?php if ( is_category() ) { ?>
+      <h1 class="banner__header">Blog</h1>
+      <div class="banner__subheader">{!! App::title() !!}</div>
+    <?php } elseif ( is_home() ) { ?>
+      <h1 class="banner__header">Blog</h1>
+      <div class="banner__subheader">News, views and WordPress tips</div>
+    <?php } ?>
   </div>
 </section>
 
